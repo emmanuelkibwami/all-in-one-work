@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>forms</title>
+<meta charset ="UTF-8">
+<meta name ="viewport" content ="width=device-width, initial-scale=1.0">
+<meta name ="author" content ="Emmanuel">
+<meta name ="description" content= "Assignment on forms">
+<meta name ="keywords" content ="form, textarea, Register">
+<link rel="stylesheet" href="/CSS./style.CSS">
+<style>
+fieldset{
+width :400px;
+height :640px;
+margin-left :200px; 
+}
+.mydesc{
+dislay: block;
+margin-bottom: 10px;
+}
+</style>
+</head>
+<body style="background-color:green;">
+<form method="POST" action="">
+<fieldset>
+<legend style="text-align: center;"> <h1>User Registration </h1></legend>
+<label for="fname">Name</label>
+<input type="text" id="fname" name="Name" value="" autofocus required="required"
+ placeholder="Enter Name"><br><br>
+<label for="DOB">Date of birth</label>
+<input type="date" id="DOB" name="Date of Birth" value="" required="required"><br><br>
+<label for= "em">Email</label>
+<input type="Email" id="em" name="Email" value="" required="required"><br><br>
+<label for ="pw">password:</label>
+<input type ="password" id="pw" name="password" value="" required="required"><br><br>
+<label="gd">Gender</label>
+<input type="radio" id="gd" name="Gender">Male<input type="radio" id="gd" name="Gender">Female<br><br>
+<p>Favourite sites</p>
+<input type="checkbox" id="st" name="chk1" value="software">
+<label for ="st">Software</label>
+<input type="checkbox" id="at" name="chk2" value="Automation tools">
+<label for="at">Automation tools</label>
+<input type="checkbox" id="im"name="chk3" value="industrial machinery">
+<label for="im">industrial machinery</label>
+<br><br>
+<label for ="description" class="mydesc" required="required">Show your interest</label>
+<textarea cols="17" rows="6" maxlength="20"id="description">What exactly do you need?</textarea>
+<br><br>
+<label for ="region">select your region</label>
+<select id="region">
+<option value="Kampala">Kampala</option>
+<option value ="Mukono">Mukono</option>
+<option value="Wakiso">Wakiso</option>
+<option value ="Mbale">Mbale</option>
+<option value="Mubende">Mubende</option>
+</select><br><br>
+<input type="Submit" name="Submit" value="Register">
+</fieldset>
+</form>
+</body>
+</html>
